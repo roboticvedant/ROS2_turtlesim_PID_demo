@@ -1,0 +1,24 @@
+[0.349s] Invoking command in '/home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller': PYTHONPATH=/home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build --no-deps install_data
+[0.498s] running develop
+[0.567s] running egg_info
+[0.567s] creating turtle_demo_controller.egg-info
+[0.567s] writing turtle_demo_controller.egg-info/PKG-INFO
+[0.567s] writing dependency_links to turtle_demo_controller.egg-info/dependency_links.txt
+[0.567s] writing entry points to turtle_demo_controller.egg-info/entry_points.txt
+[0.567s] writing requirements to turtle_demo_controller.egg-info/requires.txt
+[0.567s] writing top-level names to turtle_demo_controller.egg-info/top_level.txt
+[0.567s] writing manifest file 'turtle_demo_controller.egg-info/SOURCES.txt'
+[0.568s] reading manifest file 'turtle_demo_controller.egg-info/SOURCES.txt'
+[0.568s] writing manifest file 'turtle_demo_controller.egg-info/SOURCES.txt'
+[0.569s] running build_ext
+[0.569s] Creating /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle-demo-controller.egg-link (link to .)
+[0.570s] Installing turt_controller script to /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/turtle_demo_controller
+[0.570s] 
+[0.571s] Installed /home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller
+[0.571s] running install_data
+[0.571s] creating /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/share/ament_index
+[0.571s] creating /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/share/ament_index/resource_index
+[0.571s] creating /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/share/ament_index/resource_index/packages
+[0.571s] copying resource/turtle_demo_controller -> /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/share/ament_index/resource_index/packages
+[0.571s] copying package.xml -> /home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/share/turtle_demo_controller
+[0.591s] Invoked command in '/home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller' returned '0': PYTHONPATH=/home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/vedantknaik/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/vedantknaik/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build --no-deps install_data

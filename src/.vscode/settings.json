@@ -1,0 +1,24 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/vedantknaik/ros2_ws/build/trial_1",
+        "/home/vedantknaik/ros2_ws/install/trial_1/lib/python3.10/site-packages",
+        "/home/vedantknaik/ros2_ws/build/my_robot_controller",
+        "/home/vedantknaik/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/vedantknaik/ros2_ws/build/my_python_node",
+        "/home/vedantknaik/ros2_ws/install/my_python_node/lib/python3.10/site-packages",
+        "/home/vedantknaik/New_Folder/ros2_ws/install/my_python/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/vedantknaik/ros2_ws/build/trial_1",
+        "/home/vedantknaik/ros2_ws/install/trial_1/lib/python3.10/site-packages",
+        "/home/vedantknaik/ros2_ws/build/my_robot_controller",
+        "/home/vedantknaik/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/vedantknaik/ros2_ws/build/my_python_node",
+        "/home/vedantknaik/ros2_ws/install/my_python_node/lib/python3.10/site-packages",
+        "/home/vedantknaik/New_Folder/ros2_ws/install/my_python/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
