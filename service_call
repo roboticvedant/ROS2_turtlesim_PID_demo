@@ -1,4 +1,0 @@
-#Here I have added an example service call to test the service server implemented
-
-ros2 service call /goal_pose turtlebot_serv/srv/GoalPose "{x: 9, y: 9}"
-
