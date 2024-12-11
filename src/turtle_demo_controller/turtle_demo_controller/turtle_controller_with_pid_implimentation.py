@@ -4,6 +4,7 @@ import math
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
+from cpp_msg.action import GoToPose
 
 class Controller_Node(Node):
     def __init__(self):
@@ -11,15 +12,34 @@ class Controller_Node(Node):
         self.get_logger().info("Node Started")
         
 
-        self.desired_x = 9.0  # Adjust as needed
-        self.desired_y = 9.0  # Adjust as needed
+        
         
 
-      
+        self._action_server = ActionServer(
+            self,
+            GoToPose,
+            'GoToPose',
+            self.execute_callback)
 
-        # Publisher and Subscriber
-        self.my_pose_sub = self.create_subscription(Pose, "/turtle1/pose", self.pose_callback, 10)
-        self.my_vel_command = self.create_publisher(Twist, "/turtle1/cmd_vel", 10)
+        def execute_callback(self, goal_handle):
+            self.get_logger().info('Executing goal...')
+
+
+            self.desired_x = goal_handle.request.desired_x_pos  # Adjust as needed
+            self.desired_y = goal_handle.request.desired_y_pos
+
+            # Publisher and Subscriber
+            self.my_pose_sub = self.create_subscription(Pose, "/turtle1/pose", self.pose_callback, 10)
+            self.my_vel_command = self.create_publisher(Twist, "/turtle1/cmd_vel", 10)
+
+
+            
+
+            
+            self.result = GoToPose.Result()
+            return result
+
+      
 
     def pose_callback(self, msg: Pose):
         #self.get_logger().info(f"Current x={msg.x} current y={msg.y} and current angle = {msg.theta}")
@@ -28,6 +48,11 @@ class Controller_Node(Node):
         previous_err_dist = 0.0
         integral_theta = 0.0
         previous_err_theta = 0.0
+        feedback_msg = GoToPose.Feedback()
+        feedback_msg.current_x_pos = msg.x
+        feedback_msg.current_y_pos = msg.y
+        goal_handle.publish_feedback(feedback_msg)
+        
         # Calculate errors in position
         err_x = self.desired_x - msg.x
         err_y = self.desired_y - msg.y
@@ -86,6 +111,12 @@ class Controller_Node(Node):
         else:
             self.get_logger().info(f"Turtlesim  stopping goal heading within tolerence")
             a_v = 0.0      
+
+        if a_v == 0.0 and l_v == 0.0:
+            self.goal_handle.succeed()
+           
+            self.result.result = True
+            
 
         # Send the velocities
         self.my_velocity_cont(l_v, a_v)
