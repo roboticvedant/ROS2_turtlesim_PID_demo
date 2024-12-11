@@ -11,9 +11,9 @@ import sys
 FORMAT_STR_COMMENT_LINE = '# {comment}'
 FORMAT_STR_SET_ENV_VAR = 'Set-Item -Path "Env:{name}" -Value "{value}"'
 FORMAT_STR_USE_ENV_VAR = '$env:{name}'
-FORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script "{script_path}"'
-FORMAT_STR_REMOVE_LEADING_SEPARATOR = ''
-FORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''
+FORMAT_STR_INVOKE_SCRIPT = '_colcon_prefix_powershell_source_script "{script_path}"'  # noqa: E501
+FORMAT_STR_REMOVE_LEADING_SEPARATOR = ''  # noqa: E501
+FORMAT_STR_REMOVE_TRAILING_SEPARATOR = ''  # noqa: E501
 
 DSV_TYPE_APPEND_NON_DUPLICATE = 'append-non-duplicate'
 DSV_TYPE_PREPEND_NON_DUPLICATE = 'prepend-non-duplicate'
@@ -202,6 +202,9 @@ def process_dsv_file(
     for i, line in enumerate(lines):
         # skip over empty or whitespace-only lines
         if not line.strip():
+            continue
+        # skip over comments
+        if line.startswith('#'):
             continue
         try:
             type_, remainder = line.split(';', 1)
