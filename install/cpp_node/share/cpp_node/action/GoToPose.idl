@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from cpp_node/action/GoToPose.action
+// generated code does not contain a copyright notice
+
+
+module cpp_node {
+  module action {
+    struct GoToPose_Goal {
+      float desired_x_pos;
+
+      float desired_y_pos;
+    };
+    struct GoToPose_Result {
+      boolean result;
+    };
+    struct GoToPose_Feedback {
+      float current_x_pos;
+
+      float current_y_pos;
+    };
+  };
+};

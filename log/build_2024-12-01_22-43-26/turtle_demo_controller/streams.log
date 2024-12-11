@@ -1,0 +1,25 @@
+[0.550s] Invoking command in '/home/thedush/ROS2_turtlesim_PID_demo/src/turtle_demo_controller': PYTHONPATH=/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtle_demo_controller build --build-base /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build install --record /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log --single-version-externally-managed install_data
+[0.756s] running egg_info
+[0.757s] writing ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/PKG-INFO
+[0.757s] writing dependency_links to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/dependency_links.txt
+[0.757s] writing entry points to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/entry_points.txt
+[0.758s] writing requirements to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/requires.txt
+[0.758s] writing top-level names to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/top_level.txt
+[0.760s] reading manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'
+[0.761s] writing manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'
+[0.761s] running build
+[0.761s] running build_py
+[0.761s] copying turtle_demo_controller/turtle_controller.py -> /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build/lib/turtle_demo_controller
+[0.761s] running install
+[0.762s] running install_lib
+[0.762s] copying /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build/lib/turtle_demo_controller/turtle_controller.py -> /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller
+[0.763s] byte-compiling /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller/turtle_controller.py to turtle_controller.cpython-310.pyc
+[0.763s] Sorry: IndentationError: unindent does not match any outer indentation level (turtle_controller.py, line 62)
+[0.763s] running install_data
+[0.763s] running install_egg_info
+[0.765s] removing '/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[0.765s] Copying ../../build/turtle_demo_controller/turtle_demo_controller.egg-info to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info
+[0.765s] running install_scripts
+[0.783s] Installing turt_controller script to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/turtle_demo_controller
+[0.783s] writing list of installed files to '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log'
+[0.807s] Invoked command in '/home/thedush/ROS2_turtlesim_PID_demo/src/turtle_demo_controller' returned '0': PYTHONPATH=/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/turtle_demo_controller build --build-base /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build install --record /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log --single-version-externally-managed install_data

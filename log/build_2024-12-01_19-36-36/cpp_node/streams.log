@@ -1,0 +1,45 @@
+[0.040s] Invoking command in '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node': CMAKE_PREFIX_PATH=/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller:/opt/ros/humble /usr/bin/cmake /home/thedush/ROS2_turtlesim_PID_demo/src/cpp_node -DCMAKE_INSTALL_PREFIX=/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node
+[1.169s] -- The C compiler identification is GNU 11.4.0
+[1.607s] -- The CXX compiler identification is GNU 11.4.0
+[1.664s] -- Detecting C compiler ABI info
+[1.883s] -- Detecting C compiler ABI info - done
+[1.888s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.889s] -- Detecting C compile features
+[1.910s] -- Detecting C compile features - done
+[1.923s] -- Detecting CXX compiler ABI info
+[2.067s] -- Detecting CXX compiler ABI info - done
+[2.073s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.073s] -- Detecting CXX compile features
+[2.074s] -- Detecting CXX compile features - done
+[2.146s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.528s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.796s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[3.073s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.111s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.148s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.192s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.240s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.354s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.362s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.829s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.874s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.911s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.988s] -- Looking for pthread.h
+[4.343s] -- Looking for pthread.h - found
+[4.343s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.415s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.416s] -- Found Threads: TRUE  
+[4.723s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[4.800s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.989s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.019s] [31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):
+[5.019s]   rosidl_generate_interfaces() the passed file 'msg/BatteryState.msg' doesn't
+[5.019s]   exist relative to the CMAKE_CURRENT_SOURCE_DIR
+[5.019s]   '/home/thedush/ROS2_turtlesim_PID_demo/src/cpp_node'
+[5.019s] Call Stack (most recent call first):
+[5.019s]   CMakeLists.txt:22 (rosidl_generate_interfaces)
+[5.019s] 
+[5.019s] [0m
+[5.019s] -- Configuring incomplete, errors occurred!
+[5.019s] See also "/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node/CMakeFiles/CMakeOutput.log".
+[5.029s] Invoked command in '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node' returned '1': CMAKE_PREFIX_PATH=/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller:/opt/ros/humble /usr/bin/cmake /home/thedush/ROS2_turtlesim_PID_demo/src/cpp_node -DCMAKE_INSTALL_PREFIX=/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node
