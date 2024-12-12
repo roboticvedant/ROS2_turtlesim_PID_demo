@@ -30,7 +30,7 @@ class Controller_Node(Node):
 
         self.desired_x = request.x
         self.desired_y = request.y
-        
+        self.get_logger().info(f"Received new goal: {request.x} {request.y}")
         response.result = "Successfully sent the goal"
         return response
 
@@ -38,6 +38,11 @@ class Controller_Node(Node):
         
         self.get_logger().debug(f"Current x={self.current_x} current y={self.current_y} and current angle = {self.angle}")
         
+        integral_dist = 0.0
+        previous_err_dist = 0.0
+        integral_theta = 0.0
+        previous_err_theta = 0.0
+
         err_x = self.desired_x - self.current_x
         err_y = self.desired_y - self.current_y
         err_dist = (err_x**2+err_y**2)**0.5
@@ -58,38 +63,58 @@ class Controller_Node(Node):
         while err_theta < -math.pi:
             err_theta += 2.0 * math.pi
         self.get_logger().debug(f"Desired Angle = {desired_theta} current angle {self.angle} Error angle {err_theta}")
-        # P (ID not required) for linear velocity (distance control)
+        
+        # PID for linear velocity (distance control)
 
-        Kp_dist = 0.4
+        Kp_dist = 0.2
+        Ki_dist = 0.05
+        Kd_dist = 0.02
 
         # P (ID not required) constants for angular velocity (heading control)
-        Kp_theta = 2
+        Kp_theta = 1.5
+        Ki_theta = 0.18
+        Kd_theta = 0.1
+        max_integral = 1.0
         
-        # TODO: Add integral and derivative calculations for complete PID
+        integral_dist = max(min(integral_dist, max_integral), -max_integral)
+        integral_theta = max(min(integral_theta, max_integral), -max_integral)
 
-        #l_v = Kp_dist * abs(err_x) # + Ki_dist * integral_dist + Kd_dist * derivative_dist
-        l_v = Kp_dist * abs(err_dist) # + Ki_dist * integral_dist + Kd_dist * derivative_dist
+        #integral_dist += err_dist
+        derivative_dist = err_dist - previous_err_dist
+        #integral_theta += err_theta
+        derivative_theta = err_theta - previous_err_theta
+        
+        if abs(err_theta) > 0.08:
+            # Turn until we are close enough to the desired angle
+            a_v = Kp_theta * err_theta + Ki_theta * integral_theta + Kd_theta * derivative_theta
 
+        else:
+            a_v = 0
+
+        if err_dist>0.05 or abs(err_theta)>0.05:
+            l_v = Kp_dist * abs(err_dist) + Ki_dist * integral_dist + Kd_dist * derivative_dist
+            previous_err_dist = err_dist
+
+        else:
+            self.get_logger().debug("Robot distance is within the goal tolerance")
+            l_v = 0
 
         # PID control for angular velocity
-        a_v = Kp_theta * err_theta  
+                #a_v = Kp_theta * err_theta  + Ki_theta * integral_theta + Kd_theta * derivative_theta
 
+        previous_err_theta = err_theta
         # Send the velocities
         self.my_velocity_cont(l_v, a_v)
 
     def pose_callback(self, msg: Pose):
-        #self.get_logger().info(f"Current x={msg.x} current y={msg.y} and current angle = {msg.theta}")
-        
         self.current_x = msg.x
         self.current_y = msg.y
         self.angle = msg.theta
-        #self.path_calculator()
 
     def my_velocity_cont(self, l_v, a_v):
-        #self.get_logger().info(f"Commanding liner ={l_v} and angular ={a_v}")
         my_msg = Twist()
-        my_msg.linear.x = l_v
-        my_msg.angular.z = a_v
+        my_msg.linear.x = float(l_v)
+        my_msg.angular.z = float(a_v)
         self.my_vel_command.publish(my_msg)
 
 def main(args=None):
