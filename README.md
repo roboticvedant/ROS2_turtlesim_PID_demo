@@ -1,6 +1,6 @@
 # ROS 2 Turtlesim PID Controller
 
-This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, only the proportional constants (P) are utilized for both distance and heading error.
+This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, PID constants are utilized for both distance and heading error.
 
 ## Features
 
@@ -39,7 +39,7 @@ colcon build --packages-select turtlebot_serv
 
 ```bash
 source install/setup.bash
-colcon build
+colcon build --packages-select turtle_demo_controller
 ```
 
 5. Source the built package:
@@ -67,13 +67,7 @@ ros2 service call /goal_pose turtlebot_serv/srv/GoalPose "{x: 9, y: 9}"
 
 ## PID Control
 
-This code uses Proportional Controller to control the turtlebot.
-
-## Implementation
-
-In the current implementation, only the Proportional (P) control strategy is applied. This means the turtle's motion is directly influenced by the error in its position. 
-Given the predictable nature of the `turtlesim` environment, a P-controller suffices for stable and effective control. However, in complex, unpredictable environments, PI
-or PID control might be necessary.
+This code uses Proportional Integral Derivative Controller to control the turtlebot.
 
 ## Future Enhancements
 
