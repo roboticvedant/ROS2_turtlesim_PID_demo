@@ -62,15 +62,16 @@ class Controller_Node(Node):
             err_theta -= 2.0 * math.pi
         while err_theta < -math.pi:
             err_theta += 2.0 * math.pi
+            
         self.get_logger().debug(f"Desired Angle = {desired_theta} current angle {self.angle} Error angle {err_theta}")
         
-        # PID for linear velocity (distance control)
+        # PID constants for linear velocity (distance control)
 
         Kp_dist = 0.2
         Ki_dist = 0.05
         Kd_dist = 0.02
 
-        # P (ID not required) constants for angular velocity (heading control)
+        # PID constants for angular velocity (heading control)
         Kp_theta = 1.5
         Ki_theta = 0.18
         Kd_theta = 0.1
@@ -98,9 +99,6 @@ class Controller_Node(Node):
         else:
             self.get_logger().debug("Robot distance is within the goal tolerance")
             l_v = 0
-
-        # PID control for angular velocity
-                #a_v = Kp_theta * err_theta  + Ki_theta * integral_theta + Kd_theta * derivative_theta
 
         previous_err_theta = err_theta
         # Send the velocities
