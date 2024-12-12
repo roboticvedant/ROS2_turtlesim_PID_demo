@@ -1,5 +1,6 @@
 devel/
 .vscode/
+.gitignore/
 logs/
 build/
 install/
