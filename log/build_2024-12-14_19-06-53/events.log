@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000562] (turtle_demo_controller) JobQueued: {'identifier': 'turtle_demo_controller', 'dependencies': OrderedDict()}
+[0.000615] (turtle_demo_controller) JobStarted: {'identifier': 'turtle_demo_controller'}
+[0.100039] (-) TimerEvent: {}
+[0.200387] (-) TimerEvent: {}
+[0.300748] (-) TimerEvent: {}
+[0.404246] (-) TimerEvent: {}
+[0.504652] (-) TimerEvent: {}
+[0.607032] (-) TimerEvent: {}
+[0.707408] (-) TimerEvent: {}
+[0.809182] (-) TimerEvent: {}
+[0.909631] (-) TimerEvent: {}
+[1.010372] (-) TimerEvent: {}
+[1.110727] (-) TimerEvent: {}
+[1.213027] (-) TimerEvent: {}
+[1.313408] (-) TimerEvent: {}
+[1.413727] (-) TimerEvent: {}
+[1.514125] (-) TimerEvent: {}
+[1.617035] (-) TimerEvent: {}
+[1.717395] (-) TimerEvent: {}
+[1.819033] (-) TimerEvent: {}
+[1.919420] (-) TimerEvent: {}
+[2.019791] (-) TimerEvent: {}
+[2.120169] (-) TimerEvent: {}
+[2.220532] (-) TimerEvent: {}
+[2.321129] (-) TimerEvent: {}
+[2.421489] (-) TimerEvent: {}
+[2.525037] (-) TimerEvent: {}
+[2.625397] (-) TimerEvent: {}
+[2.726284] (-) TimerEvent: {}
+[2.830257] (-) TimerEvent: {}
+[2.930620] (-) TimerEvent: {}
+[3.031009] (-) TimerEvent: {}
+[3.134048] (-) TimerEvent: {}
+[3.234433] (-) TimerEvent: {}
+[3.336024] (-) TimerEvent: {}
+[3.436388] (-) TimerEvent: {}
+[3.507485] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_demo_controller', 'build', '--build-base', '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build', 'install', '--record', '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/thedush/ROS2_turtlesim_PID_demo/src/turtle_demo_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'thedush', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/thedush', 'OLDPWD': '/home/thedush', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2321', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/thedush/ROS2_turtlesim_PID_demo/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'thedush', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'thedush', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/thedush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/thedush-HP-Laptop-15s-du3xxx:@/tmp/.ICE-unix/2298,unix/thedush-HP-Laptop-15s-du3xxx:/tmp/.ICE-unix/2298', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/home/thedush/fastrtps-profile.xml', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2ae62c4f_8ecc_4002_a360_1a7bd03dce65', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '99', 'AMENT_PREFIX_PATH': '/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[3.619579] (-) TimerEvent: {}
+[3.721036] (-) TimerEvent: {}
+[3.825187] (-) TimerEvent: {}
+[3.928088] (-) TimerEvent: {}
+[3.976970] (turtle_demo_controller) StdoutLine: {'line': b'running egg_info\n'}
+[3.978007] (turtle_demo_controller) StdoutLine: {'line': b'writing ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/PKG-INFO\n'}
+[4.021938] (turtle_demo_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/dependency_links.txt\n'}
+[4.022199] (turtle_demo_controller) StdoutLine: {'line': b'writing entry points to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/entry_points.txt\n'}
+[4.022303] (turtle_demo_controller) StdoutLine: {'line': b'writing requirements to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/requires.txt\n'}
+[4.022396] (turtle_demo_controller) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/top_level.txt\n'}
+[4.024864] (turtle_demo_controller) StdoutLine: {'line': b"reading manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'\n"}
+[4.028218] (-) TimerEvent: {}
+[4.076470] (turtle_demo_controller) StdoutLine: {'line': b"writing manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'\n"}
+[4.076796] (turtle_demo_controller) StdoutLine: {'line': b'running build\n'}
+[4.076903] (turtle_demo_controller) StdoutLine: {'line': b'running build_py\n'}
+[4.128324] (-) TimerEvent: {}
+[4.228973] (-) TimerEvent: {}
+[4.229258] (turtle_demo_controller) StdoutLine: {'line': b'copying turtle_demo_controller/turtle_controller.py -> /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build/lib/turtle_demo_controller\n'}
+[4.230219] (turtle_demo_controller) StdoutLine: {'line': b'running install\n'}
+[4.230441] (turtle_demo_controller) StdoutLine: {'line': b'running install_lib\n'}
+[4.231553] (turtle_demo_controller) StdoutLine: {'line': b'copying /home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build/lib/turtle_demo_controller/turtle_controller.py -> /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller\n'}
+[4.233393] (turtle_demo_controller) StdoutLine: {'line': b'byte-compiling /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller/turtle_controller.py to turtle_controller.cpython-310.pyc\n'}
+[4.235312] (turtle_demo_controller) StdoutLine: {'line': b'running install_data\n'}
+[4.270966] (turtle_demo_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.273510] (turtle_demo_controller) StdoutLine: {'line': b"removing '/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.306652] (turtle_demo_controller) StdoutLine: {'line': b'Copying ../../build/turtle_demo_controller/turtle_demo_controller.egg-info to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info\n'}
+[4.329033] (-) TimerEvent: {}
+[4.432019] (-) TimerEvent: {}
+[4.448112] (turtle_demo_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[4.483611] (turtle_demo_controller) StdoutLine: {'line': b'Installing turt_controller script to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/turtle_demo_controller\n'}
+[4.484218] (turtle_demo_controller) StdoutLine: {'line': b"writing list of installed files to '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log'\n"}
+[4.526968] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[4.532135] (-) TimerEvent: {}
+[4.635022] (-) TimerEvent: {}
+[4.735341] (-) TimerEvent: {}
+[4.835897] (-) TimerEvent: {}
+[4.858720] (turtle_demo_controller) JobEnded: {'identifier': 'turtle_demo_controller', 'rc': 0}
+[4.859528] (-) EventReactorShutdown: {}

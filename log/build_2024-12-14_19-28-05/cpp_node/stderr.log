@@ -1,0 +1,8 @@
+In file included from [01m[K/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node/rosidl_typesupport_introspection_cpp/cpp_node/action/detail/go_to_pose__type_support.cpp:12[m[K:
+[01m[K/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node/rosidl_generator_cpp/cpp_node/action/detail/go_to_pose__struct.hpp:148:10:[m[K [01;31m[Kfatal error: [m[Kcpp_node/msg/detail/bool__struct.hpp: No such file or directory
+  148 | #include [01;31m[K"cpp_node/msg/detail/bool__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/cpp_node__rosidl_typesupport_introspection_cpp.dir/build.make:128: CMakeFiles/cpp_node__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_node/action/detail/go_to_pose__type_support.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/cpp_node__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
