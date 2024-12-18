@@ -1,12 +1,14 @@
-# ROS 2 Turtlesim PID Controller
+# ROS 2 Turtlesim PID Controller With ACtion server and client
 
-This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, only the proportional constants (P) are utilized for both distance and heading error.
+This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, only the proportional (P),Integral (I) and Derivative(D) are utilized for both distance and heading error.
 
 ## Features
-
+- Action server to receive client goal request.
+- Goal validation with acceptance and rejection criteria.
+- Continuous feedback provided to the client.
 - Retrieves the current pose of the turtle.
 - Computes the error in distance and heading to the desired position.
-- Uses a simple proportional controller to compute the required linear and angular velocities.
+- Uses PID controller to compute the required linear and angular velocities.
 - Publishes these velocities to command the turtle.
 
 ## Prerequisites
@@ -21,7 +23,7 @@ This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive i
 2. Clone this repository:
 
 ```bash
-git clone https://github.com/roboticvedant/ROS2_turtlesim_PID_demo.git
+git clone https://github.com/nivednivu1997/ROS2_turtlesim_PID_demo.git
 cd ROS2_turtlesim_PID_demo
 ```
 
@@ -49,16 +51,22 @@ source install/setup.bash
 ros2 run turtlesim turtlesim_node
 ```
 
-7. In a new terminal, run the controller:
+7. In a new terminal, run the action server controller:
 
 ```bash
 ros2 run turtle_demo_controller turt_controller
 ```
 
+8. In a new terminal, run the action client:
+
+```bash
+ros2 run turtle_demo_controller client
+```
+
 
 ## Configuration
 
-You can adjust the desired `x` and `y` positions by modifying the `desired_x` and `desired_y` variables respectively in the script.
+You can adjust the desired x and y positions by modifying the x and y values in the client.send_goal(x, y) function call within the client script.
 
 ## PID Control
 
@@ -74,13 +82,12 @@ The weighted sum of these three actions is used to adjust the process via a cont
 
 ## Implementation
 
-In the current implementation, only the Proportional (P) control strategy is applied. This means the turtle's motion is directly influenced by the error in its position. 
-Given the predictable nature of the `turtlesim` environment, a P-controller suffices for stable and effective control. However, in complex, unpredictable environments, PI
-or PID control might be necessary.
+In the current implementation, the Proportional (P),Integral (I) and Derivative(D) control strategy is applied. 
 
 ## Future Enhancements
 
-- Incorporate full PID control for both distance and heading error.
+- Get user input for x and y positions 
+- Convert script to cpp
 - Add dynamic reconfiguration to adjust PID constants on-the-fly.
 
 ## Contribute
