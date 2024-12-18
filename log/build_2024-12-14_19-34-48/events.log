@@ -1,0 +1,423 @@
+[0.000000] (-) TimerEvent: {}
+[0.004122] (cpp_node) JobQueued: {'identifier': 'cpp_node', 'dependencies': OrderedDict()}
+[0.004209] (turtle_demo_controller) JobQueued: {'identifier': 'turtle_demo_controller', 'dependencies': OrderedDict([('cpp_node', '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node')])}
+[0.004247] (cpp_node) JobStarted: {'identifier': 'cpp_node'}
+[0.017056] (cpp_node) JobProgress: {'identifier': 'cpp_node', 'progress': 'cmake'}
+[0.018252] (cpp_node) JobProgress: {'identifier': 'cpp_node', 'progress': 'build'}
+[0.019431] (cpp_node) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node', '--', '-j8', '-l8'], 'cwd': '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'thedush'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thedush'), ('OLDPWD', '/home/thedush/ROS2_turtlesim_PID_demo/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2298'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'thedush'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'thedush'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/thedush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/thedush-HP-Laptop-15s-du3xxx:@/tmp/.ICE-unix/2298,unix/thedush-HP-Laptop-15s-du3xxx:/tmp/.ICE-unix/2298'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/thedush/fastrtps-profile.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ede0bd25_974e_4f72_a182_ebbc8e25ee15'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.074188] (cpp_node) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.100770] (-) TimerEvent: {}
+[0.201106] (-) TimerEvent: {}
+[0.266860] (cpp_node) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.301377] (-) TimerEvent: {}
+[0.317581] (cpp_node) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.323818] (cpp_node) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.340489] (cpp_node) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.365781] (cpp_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.386285] (cpp_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.401362] (-) TimerEvent: {}
+[0.473156] (cpp_node) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.475241] (cpp_node) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.505124] (-) TimerEvent: {}
+[0.606141] (-) TimerEvent: {}
+[0.680074] (cpp_node) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.706260] (-) TimerEvent: {}
+[0.807513] (-) TimerEvent: {}
+[0.907885] (-) TimerEvent: {}
+[0.947170] (cpp_node) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.008668] (-) TimerEvent: {}
+[1.024193] (cpp_node) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.108793] (-) TimerEvent: {}
+[1.154764] (cpp_node) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.208903] (-) TimerEvent: {}
+[1.309299] (-) TimerEvent: {}
+[1.411132] (-) TimerEvent: {}
+[1.511508] (-) TimerEvent: {}
+[1.611999] (-) TimerEvent: {}
+[1.697564] (cpp_node) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.713484] (-) TimerEvent: {}
+[1.813867] (-) TimerEvent: {}
+[1.914186] (-) TimerEvent: {}
+[2.017700] (-) TimerEvent: {}
+[2.118001] (-) TimerEvent: {}
+[2.218412] (-) TimerEvent: {}
+[2.264942] (cpp_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.320367] (-) TimerEvent: {}
+[2.420721] (-) TimerEvent: {}
+[2.513690] (cpp_node) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.521624] (-) TimerEvent: {}
+[2.551197] (cpp_node) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.590631] (cpp_node) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.592527] (cpp_node) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.592794] (cpp_node) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.621749] (-) TimerEvent: {}
+[2.644430] (cpp_node) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.669107] (cpp_node) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.722098] (-) TimerEvent: {}
+[2.722491] (cpp_node) StdoutLine: {'line': b'-- Generating done\n'}
+[2.727571] (cpp_node) StdoutLine: {'line': b'-- Build files have been written to: /home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node\n'}
+[2.785811] (cpp_node) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.823126] (-) TimerEvent: {}
+[2.923705] (-) TimerEvent: {}
+[3.024158] (-) TimerEvent: {}
+[3.124519] (-) TimerEvent: {}
+[3.224894] (-) TimerEvent: {}
+[3.325185] (-) TimerEvent: {}
+[3.427116] (-) TimerEvent: {}
+[3.514458] (cpp_node) StdoutLine: {'line': b'[  3%] Built target cpp_node__cpp\n'}
+[3.527221] (-) TimerEvent: {}
+[3.551433] (cpp_node) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_cpp_node\n'}
+[3.560032] (cpp_node) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.630112] (-) TimerEvent: {}
+[3.730471] (-) TimerEvent: {}
+[3.830844] (-) TimerEvent: {}
+[3.932113] (-) TimerEvent: {}
+[4.032504] (-) TimerEvent: {}
+[4.089322] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.105199] (cpp_node) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/cpp_node/action/detail/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[4.132644] (-) TimerEvent: {}
+[4.239326] (-) TimerEvent: {}
+[4.339722] (-) TimerEvent: {}
+[4.440301] (-) TimerEvent: {}
+[4.540652] (-) TimerEvent: {}
+[4.641120] (-) TimerEvent: {}
+[4.742222] (-) TimerEvent: {}
+[4.845126] (-) TimerEvent: {}
+[4.945529] (-) TimerEvent: {}
+[4.993670] (cpp_node) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_node__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.045960] (-) TimerEvent: {}
+[5.121119] (cpp_node) StdoutLine: {'line': b'[ 12%] Built target cpp_node__rosidl_typesupport_introspection_cpp\n'}
+[5.146093] (-) TimerEvent: {}
+[5.250118] (-) TimerEvent: {}
+[5.350503] (-) TimerEvent: {}
+[5.450971] (-) TimerEvent: {}
+[5.505388] (cpp_node) StdoutLine: {'line': b'running egg_info\n'}
+[5.505625] (cpp_node) StdoutLine: {'line': b'writing cpp_node.egg-info/PKG-INFO\n'}
+[5.505730] (cpp_node) StdoutLine: {'line': b'writing dependency_links to cpp_node.egg-info/dependency_links.txt\n'}
+[5.505826] (cpp_node) StdoutLine: {'line': b'writing top-level names to cpp_node.egg-info/top_level.txt\n'}
+[5.512761] (cpp_node) StdoutLine: {'line': b"reading manifest file 'cpp_node.egg-info/SOURCES.txt'\n"}
+[5.514239] (cpp_node) StdoutLine: {'line': b"writing manifest file 'cpp_node.egg-info/SOURCES.txt'\n"}
+[5.551106] (-) TimerEvent: {}
+[5.553091] (cpp_node) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_build_cpp_node_egg\n'}
+[5.566976] (cpp_node) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.653207] (-) TimerEvent: {}
+[5.753575] (-) TimerEvent: {}
+[5.853936] (-) TimerEvent: {}
+[5.956130] (-) TimerEvent: {}
+[6.056490] (-) TimerEvent: {}
+[6.159108] (-) TimerEvent: {}
+[6.222153] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[6.237458] (cpp_node) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/cpp_node/action/detail/dds_fastrtps/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[6.259392] (-) TimerEvent: {}
+[6.362117] (-) TimerEvent: {}
+[6.462516] (-) TimerEvent: {}
+[6.565126] (-) TimerEvent: {}
+[6.665521] (-) TimerEvent: {}
+[6.765922] (-) TimerEvent: {}
+[6.866332] (-) TimerEvent: {}
+[6.966855] (-) TimerEvent: {}
+[7.071261] (-) TimerEvent: {}
+[7.091261] (cpp_node) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_node__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.171401] (-) TimerEvent: {}
+[7.232239] (cpp_node) StdoutLine: {'line': b'[ 22%] Built target cpp_node__rosidl_typesupport_fastrtps_cpp\n'}
+[7.247753] (cpp_node) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.271511] (-) TimerEvent: {}
+[7.378383] (-) TimerEvent: {}
+[7.478796] (-) TimerEvent: {}
+[7.579208] (-) TimerEvent: {}
+[7.679718] (-) TimerEvent: {}
+[7.770442] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.779849] (-) TimerEvent: {}
+[7.784536] (cpp_node) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/cpp_node/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[7.880014] (-) TimerEvent: {}
+[7.980593] (-) TimerEvent: {}
+[8.080980] (-) TimerEvent: {}
+[8.183125] (-) TimerEvent: {}
+[8.283518] (-) TimerEvent: {}
+[8.385541] (-) TimerEvent: {}
+[8.483715] (cpp_node) StdoutLine: {'line': b'[ 32%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_node__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[8.485639] (-) TimerEvent: {}
+[8.540786] (cpp_node) StdoutLine: {'line': b'[ 32%] Built target cpp_node__rosidl_typesupport_cpp\n'}
+[8.552018] (cpp_node) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.587499] (-) TimerEvent: {}
+[8.687890] (-) TimerEvent: {}
+[8.788459] (-) TimerEvent: {}
+[8.891146] (-) TimerEvent: {}
+[8.991556] (-) TimerEvent: {}
+[9.093722] (-) TimerEvent: {}
+[9.194100] (-) TimerEvent: {}
+[9.294437] (-) TimerEvent: {}
+[9.302579] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_generator_c\x1b[0m\n'}
+[9.321122] (cpp_node) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_generator_c.dir/rosidl_generator_c/cpp_node/action/detail/go_to_pose__functions.c.o\x1b[0m\n'}
+[9.394578] (-) TimerEvent: {}
+[9.494965] (-) TimerEvent: {}
+[9.521806] (cpp_node) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking C shared library libcpp_node__rosidl_generator_c.so\x1b[0m\n'}
+[9.581875] (cpp_node) StdoutLine: {'line': b'[ 41%] Built target cpp_node__rosidl_generator_c\n'}
+[9.595974] (-) TimerEvent: {}
+[9.600115] (cpp_node) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[9.696104] (-) TimerEvent: {}
+[9.796481] (-) TimerEvent: {}
+[9.896882] (-) TimerEvent: {}
+[9.998669] (-) TimerEvent: {}
+[10.099028] (-) TimerEvent: {}
+[10.200126] (-) TimerEvent: {}
+[10.222516] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[10.241663] (cpp_node) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/cpp_node/action/detail/go_to_pose__type_support_c.cpp.o\x1b[0m\n'}
+[10.301074] (-) TimerEvent: {}
+[10.401560] (-) TimerEvent: {}
+[10.502057] (-) TimerEvent: {}
+[10.602445] (-) TimerEvent: {}
+[10.702871] (-) TimerEvent: {}
+[10.800678] (cpp_node) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_node__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[10.803717] (-) TimerEvent: {}
+[10.904148] (-) TimerEvent: {}
+[10.915292] (cpp_node) StdoutLine: {'line': b'[ 51%] Built target cpp_node__rosidl_typesupport_fastrtps_c\n'}
+[10.929590] (cpp_node) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[11.004265] (-) TimerEvent: {}
+[11.104616] (-) TimerEvent: {}
+[11.205367] (-) TimerEvent: {}
+[11.305740] (-) TimerEvent: {}
+[11.347191] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_c\x1b[0m\n'}
+[11.359543] (cpp_node) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node__rosidl_typesupport_c.dir/rosidl_typesupport_c/cpp_node/action/go_to_pose__type_support.cpp.o\x1b[0m\n'}
+[11.405873] (-) TimerEvent: {}
+[11.435504] (cpp_node) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libcpp_node__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.506014] (-) TimerEvent: {}
+[11.506346] (cpp_node) StdoutLine: {'line': b'[ 61%] Built target cpp_node__rosidl_typesupport_c\n'}
+[11.521834] (cpp_node) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[11.607969] (-) TimerEvent: {}
+[11.708402] (-) TimerEvent: {}
+[11.808795] (-) TimerEvent: {}
+[11.911658] (-) TimerEvent: {}
+[12.015286] (-) TimerEvent: {}
+[12.103766] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[12.115410] (-) TimerEvent: {}
+[12.119144] (cpp_node) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/cpp_node/action/detail/go_to_pose__type_support.c.o\x1b[0m\n'}
+[12.185958] (cpp_node) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking C shared library libcpp_node__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.215539] (-) TimerEvent: {}
+[12.222219] (cpp_node) StdoutLine: {'line': b'[ 70%] Built target cpp_node__rosidl_typesupport_introspection_c\n'}
+[12.250821] (cpp_node) StdoutLine: {'line': b'[ 70%] Built target cpp_node\n'}
+[12.279378] (cpp_node) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[12.318013] (-) TimerEvent: {}
+[12.418382] (-) TimerEvent: {}
+[12.520111] (-) TimerEvent: {}
+[12.620505] (-) TimerEvent: {}
+[12.721082] (-) TimerEvent: {}
+[12.821446] (-) TimerEvent: {}
+[12.924113] (-) TimerEvent: {}
+[13.024458] (-) TimerEvent: {}
+[13.125949] (-) TimerEvent: {}
+[13.226341] (-) TimerEvent: {}
+[13.326714] (-) TimerEvent: {}
+[13.427112] (-) TimerEvent: {}
+[13.527475] (-) TimerEvent: {}
+[13.562335] (cpp_node) StdoutLine: {'line': b'[ 74%] Built target cpp_node__py\n'}
+[13.574111] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_generator_py\x1b[0m\n'}
+[13.593769] (cpp_node) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_generator_py.dir/rosidl_generator_py/cpp_node/action/_go_to_pose_s.c.o\x1b[0m\n'}
+[13.627587] (-) TimerEvent: {}
+[13.727903] (-) TimerEvent: {}
+[13.830131] (-) TimerEvent: {}
+[13.831160] (cpp_node) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cpp_node/libcpp_node__rosidl_generator_py.so\x1b[0m\n'}
+[13.904047] (cpp_node) StdoutLine: {'line': b'[ 80%] Built target cpp_node__rosidl_generator_py\n'}
+[13.917385] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[13.930256] (-) TimerEvent: {}
+[13.974184] (cpp_node) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/cpp_node/_cpp_node_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[14.034976] (-) TimerEvent: {}
+[14.135484] (-) TimerEvent: {}
+[14.177938] (cpp_node) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cpp_node/cpp_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.232835] (cpp_node) StdoutLine: {'line': b'[ 87%] Built target cpp_node__rosidl_typesupport_fastrtps_c__pyext\n'}
+[14.235586] (-) TimerEvent: {}
+[14.246964] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[14.260786] (cpp_node) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/cpp_node/_cpp_node_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[14.339127] (-) TimerEvent: {}
+[14.439529] (-) TimerEvent: {}
+[14.468132] (cpp_node) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cpp_node/cpp_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.523420] (cpp_node) StdoutLine: {'line': b'[ 93%] Built target cpp_node__rosidl_typesupport_c__pyext\n'}
+[14.536700] (cpp_node) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[14.539643] (-) TimerEvent: {}
+[14.556625] (cpp_node) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/cpp_node__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/cpp_node/_cpp_node_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[14.639773] (-) TimerEvent: {}
+[14.740188] (-) TimerEvent: {}
+[14.748870] (cpp_node) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/cpp_node/cpp_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[14.830165] (cpp_node) StdoutLine: {'line': b'[100%] Built target cpp_node__rosidl_typesupport_introspection_c__pyext\n'}
+[14.841217] (-) TimerEvent: {}
+[14.850530] (cpp_node) CommandEnded: {'returncode': 0}
+[14.936699] (cpp_node) JobProgress: {'identifier': 'cpp_node', 'progress': 'install'}
+[14.941312] (-) TimerEvent: {}
+[14.947477] (cpp_node) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node'], 'cwd': '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'thedush'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/thedush'), ('OLDPWD', '/home/thedush/ROS2_turtlesim_PID_demo/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2298'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'thedush'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'thedush'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/thedush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/thedush-HP-Laptop-15s-du3xxx:@/tmp/.ICE-unix/2298,unix/thedush-HP-Laptop-15s-du3xxx:/tmp/.ICE-unix/2298'), ('FASTRTPS_DEFAULT_PROFILES_FILE', '/home/thedush/fastrtps-profile.xml'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ede0bd25_974e_4f72_a182_ebbc8e25ee15'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.89'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ROS_DOMAIN_ID', '99'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/thedush/ROS2_turtlesim_PID_demo/build/cpp_node'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[14.958156] (cpp_node) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.958463] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/ament_index/resource_index/rosidl_interfaces/cpp_node\n'}
+[14.958557] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.958636] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg\n'}
+[14.958713] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.958844] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.958914] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.958990] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__struct.h\n'}
+[14.959264] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__functions.c\n'}
+[14.959430] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__type_support.h\n'}
+[14.959526] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__functions.h\n'}
+[14.959617] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/go_to_pose.h\n'}
+[14.959748] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/library_path.sh\n'}
+[14.959851] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/library_path.dsv\n'}
+[14.959945] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_generator_c.so\n'}
+[14.960151] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_generator_c.so" to ""\n'}
+[14.960377] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.960544] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg\n'}
+[14.960617] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.960683] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.960743] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.960828] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__rosidl_typesupport_fastrtps_c.h\n'}
+[14.960933] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_fastrtps_c.so\n'}
+[14.961033] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.961151] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.961238] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.961297] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.961360] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__struct.hpp\n'}
+[14.961424] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__traits.hpp\n'}
+[14.961514] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__builder.hpp\n'}
+[14.961617] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/go_to_pose.hpp\n'}
+[14.961737] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.961801] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg\n'}
+[14.961862] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.961926] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.962049] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.962115] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/dds_fastrtps\n'}
+[14.962179] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.962240] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.962346] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.962483] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.962542] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg\n'}
+[14.962604] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.962667] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.962728] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.962802] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__type_support.c\n'}
+[14.962914] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__rosidl_typesupport_introspection_c.h\n'}
+[14.962977] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_introspection_c.so\n'}
+[14.963151] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.963287] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_c.so\n'}
+[14.963564] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_c.so" to ""\n'}
+[14.963700] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node\n'}
+[14.963793] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action\n'}
+[14.963900] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail\n'}
+[14.964071] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.964214] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/include/cpp_node/cpp_node/action/detail/go_to_pose__type_support.cpp\n'}
+[14.964319] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_introspection_cpp.so\n'}
+[14.964441] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.964570] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_cpp.so\n'}
+[14.964867] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_typesupport_cpp.so" to ""\n'}
+[14.964995] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/pythonpath.sh\n'}
+[14.965124] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/pythonpath.dsv\n'}
+[14.965241] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node-0.0.0-py3.10.egg-info\n'}
+[14.965356] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[14.965489] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[14.965572] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[14.965654] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[14.965762] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node\n'}
+[14.965890] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/_cpp_node_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.965975] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/__init__.py\n'}
+[14.966121] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.966228] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.966333] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[14.966425] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/libcpp_node__rosidl_generator_py.so\n'}
+[14.966539] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/_cpp_node_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.966635] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action\n'}
+[14.966729] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action/__init__.py\n'}
+[14.966821] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action/_go_to_pose.py\n'}
+[14.966920] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action/_go_to_pose_s.c\n'}
+[14.967044] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/_cpp_node_s.ep.rosidl_typesupport_c.c\n'}
+[15.024650] (cpp_node) StdoutLine: {'line': b"Listing '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node'...\n"}
+[15.024909] (cpp_node) StdoutLine: {'line': b"Compiling '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/__init__.py'...\n"}
+[15.025027] (cpp_node) StdoutLine: {'line': b"Listing '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action'...\n"}
+[15.025134] (cpp_node) StdoutLine: {'line': b"Compiling '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action/__init__.py'...\n"}
+[15.025220] (cpp_node) StdoutLine: {'line': b"Compiling '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/action/_go_to_pose.py'...\n"}
+[15.028974] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.029287] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.029766] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.030378] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.030818] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[15.031383] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages/cpp_node/cpp_node_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[15.031762] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_generator_py.so\n'}
+[15.032384] (cpp_node) StdoutLine: {'line': b'-- Set runtime path of "/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib/libcpp_node__rosidl_generator_py.so" to ""\n'}
+[15.032643] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/action/GoToPose.idl\n'}
+[15.033010] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/action/GoToPose.action\n'}
+[15.033398] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/ament_index/resource_index/package_run_dependencies/cpp_node\n'}
+[15.033634] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/ament_index/resource_index/parent_prefix_path/cpp_node\n'}
+[15.033848] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/ament_prefix_path.sh\n'}
+[15.034123] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/ament_prefix_path.dsv\n'}
+[15.034505] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/path.sh\n'}
+[15.038110] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/environment/path.dsv\n'}
+[15.038336] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/local_setup.bash\n'}
+[15.038420] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/local_setup.sh\n'}
+[15.038510] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/local_setup.zsh\n'}
+[15.038588] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/local_setup.dsv\n'}
+[15.038666] (cpp_node) StdoutLine: {'line': b'-- Installing: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/package.dsv\n'}
+[15.038744] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/ament_index/resource_index/packages/cpp_node\n'}
+[15.038825] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_generator_cExport.cmake\n'}
+[15.038995] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_generator_cExport-noconfig.cmake\n'}
+[15.039270] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[15.039417] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[15.039552] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_generator_cppExport.cmake\n'}
+[15.039696] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[15.039789] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[15.039918] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_introspection_cExport.cmake\n'}
+[15.040013] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[15.040155] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_cExport.cmake\n'}
+[15.040277] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[15.040428] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[15.040527] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[15.040613] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_cppExport.cmake\n'}
+[15.040702] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_node__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[15.040862] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_generator_pyExport.cmake\n'}
+[15.040961] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/export_cpp_node__rosidl_generator_pyExport-noconfig.cmake\n'}
+[15.041058] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/rosidl_cmake-extras.cmake\n'}
+[15.041155] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.041232] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.041306] (-) TimerEvent: {}
+[15.041473] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.041569] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[15.041838] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[15.041934] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[15.042014] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_nodeConfig.cmake\n'}
+[15.042111] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/cmake/cpp_nodeConfig-version.cmake\n'}
+[15.042191] (cpp_node) StdoutLine: {'line': b'-- Up-to-date: /home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/share/cpp_node/package.xml\n'}
+[15.046470] (cpp_node) CommandEnded: {'returncode': 0}
+[15.141416] (-) TimerEvent: {}
+[15.167347] (cpp_node) JobEnded: {'identifier': 'cpp_node', 'rc': 0}
+[15.167866] (turtle_demo_controller) JobStarted: {'identifier': 'turtle_demo_controller'}
+[15.241541] (-) TimerEvent: {}
+[15.345112] (-) TimerEvent: {}
+[15.445454] (-) TimerEvent: {}
+[15.547206] (-) TimerEvent: {}
+[15.647636] (-) TimerEvent: {}
+[15.747947] (-) TimerEvent: {}
+[15.849119] (-) TimerEvent: {}
+[15.949472] (-) TimerEvent: {}
+[16.050110] (-) TimerEvent: {}
+[16.150452] (-) TimerEvent: {}
+[16.196633] (turtle_demo_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/turtle_demo_controller', 'build', '--build-base', '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/build', 'install', '--record', '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/thedush/ROS2_turtlesim_PID_demo/src/turtle_demo_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'thedush', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/thedush', 'OLDPWD': '/home/thedush/ROS2_turtlesim_PID_demo/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2298', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'thedush', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'thedush', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/thedush/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/thedush-HP-Laptop-15s-du3xxx:@/tmp/.ICE-unix/2298,unix/thedush-HP-Laptop-15s-du3xxx:/tmp/.ICE-unix/2298', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/home/thedush/fastrtps-profile.xml', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/ede0bd25_974e_4f72_a182_ebbc8e25ee15', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.89', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '99', 'AMENT_PREFIX_PATH': '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller', 'TURTLEBOT3_MODEL': 'waffle', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=08fb394bc067b102164ff70b675d7b68', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/prefix_override:/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages:/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/thedush/ROS2_turtlesim_PID_demo/install/cpp_node'}, 'shell': False}
+[16.252105] (-) TimerEvent: {}
+[16.352468] (-) TimerEvent: {}
+[16.452827] (-) TimerEvent: {}
+[16.553204] (-) TimerEvent: {}
+[16.594442] (turtle_demo_controller) StdoutLine: {'line': b'running egg_info\n'}
+[16.594724] (turtle_demo_controller) StdoutLine: {'line': b'writing ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/PKG-INFO\n'}
+[16.595831] (turtle_demo_controller) StdoutLine: {'line': b'writing dependency_links to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/dependency_links.txt\n'}
+[16.596033] (turtle_demo_controller) StdoutLine: {'line': b'writing entry points to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/entry_points.txt\n'}
+[16.596147] (turtle_demo_controller) StdoutLine: {'line': b'writing requirements to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/requires.txt\n'}
+[16.596253] (turtle_demo_controller) StdoutLine: {'line': b'writing top-level names to ../../build/turtle_demo_controller/turtle_demo_controller.egg-info/top_level.txt\n'}
+[16.598531] (turtle_demo_controller) StdoutLine: {'line': b"reading manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'\n"}
+[16.600820] (turtle_demo_controller) StdoutLine: {'line': b"writing manifest file '../../build/turtle_demo_controller/turtle_demo_controller.egg-info/SOURCES.txt'\n"}
+[16.601014] (turtle_demo_controller) StdoutLine: {'line': b'running build\n'}
+[16.601129] (turtle_demo_controller) StdoutLine: {'line': b'running build_py\n'}
+[16.601272] (turtle_demo_controller) StdoutLine: {'line': b'running install\n'}
+[16.601795] (turtle_demo_controller) StdoutLine: {'line': b'running install_lib\n'}
+[16.603885] (turtle_demo_controller) StdoutLine: {'line': b'running install_data\n'}
+[16.604095] (turtle_demo_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.607117] (turtle_demo_controller) StdoutLine: {'line': b"removing '/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[16.607574] (turtle_demo_controller) StdoutLine: {'line': b'Copying ../../build/turtle_demo_controller/turtle_demo_controller.egg-info to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller-0.0.0-py3.10.egg-info\n'}
+[16.608708] (turtle_demo_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[16.632685] (turtle_demo_controller) StdoutLine: {'line': b'Installing turt_controller script to /home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/turtle_demo_controller\n'}
+[16.633015] (turtle_demo_controller) StdoutLine: {'line': b"writing list of installed files to '/home/thedush/ROS2_turtlesim_PID_demo/build/turtle_demo_controller/install.log'\n"}
+[16.654867] (-) TimerEvent: {}
+[16.678180] (turtle_demo_controller) CommandEnded: {'returncode': 0}
+[16.687498] (turtle_demo_controller) JobEnded: {'identifier': 'turtle_demo_controller', 'rc': 0}
+[16.688462] (-) EventReactorShutdown: {}

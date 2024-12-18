@@ -11,6 +11,7 @@
   <depend>turtlesim</depend>
   <depend>geometry_msgs</depend>
   <depend>math</depend>
+  <depend>cpp_node</depend>
 
 
   <test_depend>ament_copyright</test_depend>

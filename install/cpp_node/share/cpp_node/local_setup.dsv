@@ -1,0 +1,4 @@
+source;share/cpp_node/environment/ament_prefix_path.sh
+source;share/cpp_node/environment/library_path.sh
+source;share/cpp_node/environment/path.sh
+source;share/cpp_node/environment/pythonpath.sh
