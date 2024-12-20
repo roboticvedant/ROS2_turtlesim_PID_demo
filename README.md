@@ -1,6 +1,6 @@
 # ROS 2 Turtlesim PID Controller
 
-This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, only the proportional constants (P) are utilized for both distance and heading error.
+This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, PID constants are utilized for both distance and heading error.
 
 ## Features
 
@@ -31,10 +31,15 @@ cd ROS2_turtlesim_PID_demo
 source /opt/ros/[YOUR_ROS2_DISTRO]/setup.bash
 ```
 
-4. Build the package:
+4. Build the service package first, source it and then build the main turtle_demo_controller package:
 
 ```bash
-colcon build --symlink-install
+colcon build --packages-select turtlebot_serv
+```
+
+```bash
+source install/setup.bash
+colcon build --packages-select turtle_demo_controller
 ```
 
 5. Source the built package:
@@ -54,29 +59,15 @@ ros2 run turtlesim turtlesim_node
 ```bash
 ros2 run turtle_demo_controller turt_controller
 ```
+8. In a new terminal tab, run the service call to give custom goal:
 
-
-## Configuration
-
-You can adjust the desired `x` and `y` positions by modifying the `desired_x` and `desired_y` variables respectively in the script.
+```bash
+ros2 service call /goal_pose turtlebot_serv/srv/GoalPose "{x: 9, y: 9}"
+```
 
 ## PID Control
 
-PID control is one of the most widely used feedback controllers in the industry. It combines three components:
-
-1. **Proportional (P)**: The proportional term produces an output value that is proportional to the current error value. It determines the reaction based on the present error.
-
-2. **Integral (I)**: The integral term concerns past values of error. If the error has been present for an extended period, it will accumulate (integral of the error), and the controller will respond by increasing (or decreasing) the control action in relation to a sustained error.
-
-3. **Derivative (D)**: The derivative term is a prediction of future error. It provides a control action to counteract the rate of error change. 
-
-The weighted sum of these three actions is used to adjust the process via a control element, such as the position of a control valve or the power supply of a heating element.
-
-## Implementation
-
-In the current implementation, only the Proportional (P) control strategy is applied. This means the turtle's motion is directly influenced by the error in its position. 
-Given the predictable nature of the `turtlesim` environment, a P-controller suffices for stable and effective control. However, in complex, unpredictable environments, PI
-or PID control might be necessary.
+This code uses Proportional Integral Derivative Controller to control the turtlebot.
 
 ## Future Enhancements
 
