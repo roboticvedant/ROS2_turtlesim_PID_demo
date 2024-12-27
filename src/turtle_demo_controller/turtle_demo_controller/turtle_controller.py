@@ -124,8 +124,8 @@ class Controller_Node(Node):
             self.err_theta += 2.0 * math.pi
 
         # PID gains for distance and heading control
-        Kp_dist, Ki_dist, Kd_dist = 0.4, 0.1, 0.08
-        Kp_theta, Ki_theta, Kd_theta = 2, 0.1, 0.01
+        Kp_dist, Ki_dist, Kd_dist = 0.2, 0.05, 0.02
+        Kp_theta, Ki_theta, Kd_theta = 1.5, 0.18, 0.1
 
         # Initialize integral and derivative terms
         integral_dist = 0.0
