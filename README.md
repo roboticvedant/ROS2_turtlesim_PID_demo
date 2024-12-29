@@ -1,4 +1,4 @@
-# ROS 2 Turtlesim PID Controller With ACtion server and client
+# ROS 2 Turtlesim PID Controller With Action server and client
 
 This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive it to a desired position using a PID controller. Currently, only the proportional (P),Integral (I) and Derivative(D) are utilized for both distance and heading error.
 
