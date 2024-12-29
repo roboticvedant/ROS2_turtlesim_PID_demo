@@ -1,5 +1,0 @@
-  File "/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller/turtle_controller.py", line 101
-    ifself.err_dist >= 0.1: #checking whether error distance within tolerence
-                          ^
-SyntaxError: invalid syntax
-

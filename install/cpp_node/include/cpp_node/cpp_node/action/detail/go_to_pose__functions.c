@@ -250,7 +250,7 @@ cpp_node__action__GoToPose_Result__init(cpp_node__action__GoToPose_Result * msg)
   if (!msg) {
     return false;
   }
-  // result
+  // sucess
   return true;
 }
 
@@ -260,7 +260,7 @@ cpp_node__action__GoToPose_Result__fini(cpp_node__action__GoToPose_Result * msg)
   if (!msg) {
     return;
   }
-  // result
+  // sucess
 }
 
 bool
@@ -269,8 +269,8 @@ cpp_node__action__GoToPose_Result__are_equal(const cpp_node__action__GoToPose_Re
   if (!lhs || !rhs) {
     return false;
   }
-  // result
-  if (lhs->result != rhs->result) {
+  // sucess
+  if (lhs->sucess != rhs->sucess) {
     return false;
   }
   return true;
@@ -284,8 +284,8 @@ cpp_node__action__GoToPose_Result__copy(
   if (!input || !output) {
     return false;
   }
-  // result
-  output->result = input->result;
+  // sucess
+  output->sucess = input->sucess;
   return true;
 }
 

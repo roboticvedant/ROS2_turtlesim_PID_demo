@@ -34,7 +34,7 @@ void cpp_node__action__GoToPose_Goal__rosidl_typesupport_introspection_c__GoToPo
 static rosidl_typesupport_introspection_c__MessageMember cpp_node__action__GoToPose_Goal__rosidl_typesupport_introspection_c__GoToPose_Goal_message_member_array[2] = {
   {
     "desired_x_pos",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -51,7 +51,7 @@ static rosidl_typesupport_introspection_c__MessageMember cpp_node__action__GoToP
   },
   {
     "desired_y_pos",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -138,14 +138,14 @@ void cpp_node__action__GoToPose_Result__rosidl_typesupport_introspection_c__GoTo
 
 static rosidl_typesupport_introspection_c__MessageMember cpp_node__action__GoToPose_Result__rosidl_typesupport_introspection_c__GoToPose_Result_message_member_array[1] = {
   {
-    "result",  // name
+    "sucess",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cpp_node__action__GoToPose_Result, result),  // bytes offset in struct
+    offsetof(cpp_node__action__GoToPose_Result, sucess),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -227,7 +227,7 @@ void cpp_node__action__GoToPose_Feedback__rosidl_typesupport_introspection_c__Go
 static rosidl_typesupport_introspection_c__MessageMember cpp_node__action__GoToPose_Feedback__rosidl_typesupport_introspection_c__GoToPose_Feedback_message_member_array[2] = {
   {
     "current_x_pos",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array
@@ -244,7 +244,7 @@ static rosidl_typesupport_introspection_c__MessageMember cpp_node__action__GoToP
   },
   {
     "current_y_pos",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is array

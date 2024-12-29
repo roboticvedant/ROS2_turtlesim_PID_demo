@@ -1,5 +1,0 @@
-  File "/home/thedush/ROS2_turtlesim_PID_demo/install/turtle_demo_controller/lib/python3.10/site-packages/turtle_demo_controller/turtle_controller_with_pid_implimentation.py", line 21
-    'go_to_pose',
-    ^^^^^^^^^^^^
-SyntaxError: invalid syntax
-

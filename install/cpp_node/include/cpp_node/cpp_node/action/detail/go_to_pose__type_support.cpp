@@ -40,7 +40,7 @@ void GoToPose_Goal_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember GoToPose_Goal_message_member_array[2] = {
   {
     "desired_x_pos",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -57,7 +57,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember GoToPose_Goal
   },
   {
     "desired_y_pos",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -175,14 +175,14 @@ void GoToPose_Result_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember GoToPose_Result_message_member_array[1] = {
   {
-    "result",  // name
+    "sucess",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(cpp_node::action::GoToPose_Result, result),  // bytes offset in struct
+    offsetof(cpp_node::action::GoToPose_Result, sucess),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -295,7 +295,7 @@ void GoToPose_Feedback_fini_function(void * message_memory)
 static const ::rosidl_typesupport_introspection_cpp::MessageMember GoToPose_Feedback_message_member_array[2] = {
   {
     "current_x_pos",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
@@ -312,7 +312,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember GoToPose_Feed
   },
   {
     "current_y_pos",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array

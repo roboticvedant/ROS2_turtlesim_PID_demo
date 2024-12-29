@@ -20,8 +20,8 @@ extern "C"
 /// Struct defined in action/GoToPose in the package cpp_node.
 typedef struct cpp_node__action__GoToPose_Goal
 {
-  float desired_x_pos;
-  float desired_y_pos;
+  double desired_x_pos;
+  double desired_y_pos;
 } cpp_node__action__GoToPose_Goal;
 
 // Struct for a sequence of cpp_node__action__GoToPose_Goal.
@@ -40,7 +40,7 @@ typedef struct cpp_node__action__GoToPose_Goal__Sequence
 /// Struct defined in action/GoToPose in the package cpp_node.
 typedef struct cpp_node__action__GoToPose_Result
 {
-  bool result;
+  bool sucess;
 } cpp_node__action__GoToPose_Result;
 
 // Struct for a sequence of cpp_node__action__GoToPose_Result.
@@ -59,8 +59,8 @@ typedef struct cpp_node__action__GoToPose_Result__Sequence
 /// Struct defined in action/GoToPose in the package cpp_node.
 typedef struct cpp_node__action__GoToPose_Feedback
 {
-  float current_x_pos;
-  float current_y_pos;
+  double current_x_pos;
+  double current_y_pos;
 } cpp_node__action__GoToPose_Feedback;
 
 // Struct for a sequence of cpp_node__action__GoToPose_Feedback.

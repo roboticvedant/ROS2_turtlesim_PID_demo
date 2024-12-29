@@ -1,7 +1,11 @@
-float32 desired_x_pos
-float32 desired_y_pos
+#Goal
+float64 desired_x_pos
+float64 desired_y_pos
 ---
-bool result
+#Result
+bool sucess
 ---
-float32 current_x_pos
-float32 current_y_pos
+#Feedback
+float64 current_x_pos
+float64 current_y_pos
+

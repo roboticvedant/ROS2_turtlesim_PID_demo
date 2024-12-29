@@ -10,6 +10,7 @@ This ROS 2 Python node controls a turtle in the `turtlesim` simulator to drive i
 - Computes the error in distance and heading to the desired position.
 - Uses PID controller to compute the required linear and angular velocities.
 - Publishes these velocities to command the turtle.
+- Action Cient code for user inputting x and y positions. 
 
 ## Prerequisites
 
@@ -86,7 +87,6 @@ In the current implementation, the Proportional (P),Integral (I) and Derivative(
 
 ## Future Enhancements
 
-- Get user input for x and y positions 
 - Convert script to cpp
 - Add dynamic reconfiguration to adjust PID constants on-the-fly.
 

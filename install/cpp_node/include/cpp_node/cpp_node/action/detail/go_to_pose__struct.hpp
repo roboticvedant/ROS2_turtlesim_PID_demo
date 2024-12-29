@@ -38,8 +38,8 @@ struct GoToPose_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->desired_x_pos = 0.0f;
-      this->desired_y_pos = 0.0f;
+      this->desired_x_pos = 0.0;
+      this->desired_y_pos = 0.0;
     }
   }
 
@@ -49,28 +49,28 @@ struct GoToPose_Goal_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->desired_x_pos = 0.0f;
-      this->desired_y_pos = 0.0f;
+      this->desired_x_pos = 0.0;
+      this->desired_y_pos = 0.0;
     }
   }
 
   // field types and members
   using _desired_x_pos_type =
-    float;
+    double;
   _desired_x_pos_type desired_x_pos;
   using _desired_y_pos_type =
-    float;
+    double;
   _desired_y_pos_type desired_y_pos;
 
   // setters for named parameter idiom
   Type & set__desired_x_pos(
-    const float & _arg)
+    const double & _arg)
   {
     this->desired_x_pos = _arg;
     return *this;
   }
   Type & set__desired_y_pos(
-    const float & _arg)
+    const double & _arg)
   {
     this->desired_y_pos = _arg;
     return *this;
@@ -166,7 +166,7 @@ struct GoToPose_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->result = false;
+      this->sucess = false;
     }
   }
 
@@ -176,20 +176,20 @@ struct GoToPose_Result_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->result = false;
+      this->sucess = false;
     }
   }
 
   // field types and members
-  using _result_type =
+  using _sucess_type =
     bool;
-  _result_type result;
+  _sucess_type sucess;
 
   // setters for named parameter idiom
-  Type & set__result(
+  Type & set__sucess(
     const bool & _arg)
   {
-    this->result = _arg;
+    this->sucess = _arg;
     return *this;
   }
 
@@ -235,7 +235,7 @@ struct GoToPose_Result_
   // comparison operators
   bool operator==(const GoToPose_Result_ & other) const
   {
-    if (this->result != other.result) {
+    if (this->sucess != other.sucess) {
       return false;
     }
     return true;
@@ -280,8 +280,8 @@ struct GoToPose_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->current_x_pos = 0.0f;
-      this->current_y_pos = 0.0f;
+      this->current_x_pos = 0.0;
+      this->current_y_pos = 0.0;
     }
   }
 
@@ -291,28 +291,28 @@ struct GoToPose_Feedback_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->current_x_pos = 0.0f;
-      this->current_y_pos = 0.0f;
+      this->current_x_pos = 0.0;
+      this->current_y_pos = 0.0;
     }
   }
 
   // field types and members
   using _current_x_pos_type =
-    float;
+    double;
   _current_x_pos_type current_x_pos;
   using _current_y_pos_type =
-    float;
+    double;
   _current_y_pos_type current_y_pos;
 
   // setters for named parameter idiom
   Type & set__current_x_pos(
-    const float & _arg)
+    const double & _arg)
   {
     this->current_x_pos = _arg;
     return *this;
   }
   Type & set__current_y_pos(
-    const float & _arg)
+    const double & _arg)
   {
     this->current_y_pos = _arg;
     return *this;

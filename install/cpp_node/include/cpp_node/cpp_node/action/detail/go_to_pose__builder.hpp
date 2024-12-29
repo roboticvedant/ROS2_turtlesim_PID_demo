@@ -79,15 +79,15 @@ namespace action
 namespace builder
 {
 
-class Init_GoToPose_Result_result
+class Init_GoToPose_Result_sucess
 {
 public:
-  Init_GoToPose_Result_result()
+  Init_GoToPose_Result_sucess()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  ::cpp_node::action::GoToPose_Result result(::cpp_node::action::GoToPose_Result::_result_type arg)
+  ::cpp_node::action::GoToPose_Result sucess(::cpp_node::action::GoToPose_Result::_sucess_type arg)
   {
-    msg_.result = std::move(arg);
+    msg_.sucess = std::move(arg);
     return std::move(msg_);
   }
 
@@ -106,7 +106,7 @@ template<>
 inline
 auto build<::cpp_node::action::GoToPose_Result>()
 {
-  return cpp_node::action::builder::Init_GoToPose_Result_result();
+  return cpp_node::action::builder::Init_GoToPose_Result_sucess();
 }
 
 }  // namespace cpp_node
