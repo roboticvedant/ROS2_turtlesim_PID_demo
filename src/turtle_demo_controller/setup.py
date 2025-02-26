@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'turt_controller = turtle_demo_controller.turtle_controller_with_PID_controller_server:main'
+            'turt_controller = turtle_demo_controller.turtle_controller:main',
+            'client = turtle_demo_controller.action_client:main'
         ],
     },
 )

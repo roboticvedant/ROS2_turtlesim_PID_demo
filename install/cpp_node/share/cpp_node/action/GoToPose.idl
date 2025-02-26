@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from cpp_node/action/GoToPose.action
+// generated code does not contain a copyright notice
+
+
+module cpp_node {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct GoToPose_Goal {
+      double desired_x_pos;
+
+      double desired_y_pos;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct GoToPose_Result {
+      boolean sucess;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct GoToPose_Feedback {
+      double current_x_pos;
+
+      double current_y_pos;
+    };
+  };
+};
